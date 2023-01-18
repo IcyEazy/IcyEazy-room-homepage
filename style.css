@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.mobile{
+    display: none;
+}
+.imgs{
+    width: 100%;
+}
+p{
+    line-height: 19px;
+    color: hsl(0, 0%, 63%);
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.opac{
+    opacity: 0.6;
+}
+.flow{
+    overflow-y: hidden;
+}
+
+.nav-links{
+    background-image: url("./images/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.links a{
+    color: white;
+}
+
+.links a:hover{
+    padding-bottom: .6rem;
+    border-bottom: 3px solid white;
+}
+
+.opened p span a:hover{
+   padding-bottom: .6rem;
+    border-bottom: 3px solid black; 
+} 
+
+.seek-btn{
+    background-color: black;
+    width: 115px;
+    margin-top: 2rem;
+}
+.seek-btn img{
+    padding: 1rem 1.25rem ;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.seek-btn img:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+.desk-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    flex-basis: 63%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.nav-links p {
+    margin-left: 2.5rem;
+    word-spacing: 1.5rem;
+}
+.desk-discover{
+    flex-basis: 37%;
+}
+.disc-texts{
+    padding: 4.5rem 3.8rem;
+}
+.desk-discover h1{
+    font-size: 40px;
+}
+.shop{
+    text-transform: uppercase;
+    display: flex;
+    word-spacing: .6rem;
+    letter-spacing: .4rem;
+    margin-top: 2rem;
+}
+.shop:hover{
+    color: hsl(0, 0%, 63%);
+}
+.shop:hover svg path{
+    fill: hsl(0, 0%, 63%);
+}
+.arrow{
+    margin-left: 1rem;
+}
+
+.desk{
+    display: flex;
+}
+.desk-future-texts{
+    flex-basis: 40%;
+    padding: 2rem;
+}
+.desk-future-texts h1, .future-texts h1{
+    text-transform: uppercase;
+    font-size: 16px;
+    word-spacing: .5rem;
+    letter-spacing: .3rem;
+}
+
+@media screen and (max-width: 560px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    #open, #close{
+        cursor: pointer;
+    }
+    header .mobile{
+        background-image: url("./images/mobile-image-hero-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    nav{
+        padding: 2.5rem 2rem 30rem 2rem;
+    }
+    .menu-opened{
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        width: 100%;
+    }
+    .opened{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 2rem 1.5rem;
+    }
+    .opened p{
+        word-spacing: 1rem;
+    }
+    .logo{
+        position: relative;
+        left: 35%;
+    }
+    .seek-btn{
+        position: absolute;
+        margin-top: -3.7rem;
+        right: 0;
+    }
+    .disc-texts{
+        padding: 2rem 1.5rem;
+        margin: auto;
+    }
+    .disc-texts h1{
+        font-size: 30px;
+    }
+    .future-texts{
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    nav{
+        padding: 2.5rem 2rem 19rem 2rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
